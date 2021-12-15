@@ -10,6 +10,7 @@ node
     {
         sh "${mavenhome}/bin/mvn clean package" 
     }
+    /*
     stage('sonar')
     {
         sh "${mavenhome}/bin/mvn sonar:sonar"
@@ -29,4 +30,5 @@ node
     {
         mail bcc: '', body: 'Completed', cc: ' ', from: '', replyTo: '', subject: 'Build', to: 'manojece4288@gmail.com'
     }
+    */
 }
